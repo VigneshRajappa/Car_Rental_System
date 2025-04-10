@@ -12,11 +12,11 @@ public class CarApproval {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "carId")
     private Car car;
 
     @ManyToOne
-    @JoinColumn(name = "manager_id")
+    @JoinColumn(name = "managerId")
     private Manager manager;
 
     private LocalDate approvalDate = LocalDate.now();
